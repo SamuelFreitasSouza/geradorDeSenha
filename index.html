@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1 class="title">Gere sua senha</h1>
+            <p class="subtitle">Utilize esse gerador de senha, para gerar senhas mais fortes!</p>
+        </section>
+        <section class="box">
+            <div class="senha">
+                <div class="text">
+                    <input type="text" id="senhaInput">
+                </div>
+                <div class="actions">
+                    <button id="copiar-2"><i class="fa-solid fa-copy"></i></button>
+                    <button id="renovar"><i class="fa-solid fa-rotate"></i></button>
+                </div>
+            </div>
+            <div class="indicadorDeSeguranca">
+                <div id="barraDeSeguranca" class="bar safe" style="width:100%;"></div>
+            </div>
+        </section>
+
+        <section class="box customizar">
+            <h3 class="title">Customizar Senha</h3>
+            <div class="actions">
+                <div class="tamanhoSenha">
+                    <p>Tamanho: <span id="tamanhoSenhaTexto">16</span></p>
+                    <input type="range" name="range" id="range" class="slider" value="16" min="4" max="40">
+                </div>
+                <div class="configuracao">
+                    <label class="checkbox-container">
+                        <span class="texto">Maiúsculas</span>
+                        <input type="checkbox" id="uppercase-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="texto">Números</span>
+                        <input type="checkbox" id="number-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="texto">Símbolos</span>
+                        <input type="checkbox" id="symbol-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <div class="submit">
+            <button id="copiar-1">Copiar senha</button>
+        </div>
+        
+        <script src="script.js"></script>
+    
+        <!--<hr>
+    
+        <h2>Dicas sobre senhas</h2>
+        <p>Comprimento: Uma senha segura deve ter no mínimo 12 a 16 caracteres. Quanto mais longa, melhor. Senhas com 20 ou mais caracteres são excelentes.</p>
+        <p>Diversificação: Use uma combinação de letras maiúsculas, letras minúsculas, números e caracteres especiais (como !, @, #, $, etc.) em sua senha.</p>
+        <p>Evite informações pessoais: Não use informações facilmente acessíveis, como nomes próprios, datas de nascimento, números de telefone, ou outras informações pessoais em sua senha.</p>
+        <p>Evite palavras comuns: Evite palavras do dicionário, frases comuns ou sequências óbvias de caracteres.</p>
+        <p>Senhas únicas: Use senhas diferentes para diferentes contas e serviços. Não reutilize senhas.</p>
+        <p>Autenticação de dois fatores (2FA): Sempre que possível, ative a autenticação de dois fatores para adicionar uma camada extra de segurança. </p>
+    
+        <h3>Explicações</h3>
+        <p>O tempo que um hacker levará para quebrar uma senha depende de vários fatores, incluindo a força da senha, o poder de processamento disponível para o hacker e as técnicas de ataque utilizadas. Senhas mais curtas e menos complexas podem ser quebradas muito rapidamente com o uso de técnicas de força bruta ou dicionário. Senhas mais longas e complexas exigirão mais tempo e recursos para serem quebradas.</p>
+    
+        <p>Para dar uma ideia aproximada, aqui estão algumas estimativas aproximadas do tempo que levaria para quebrar senhas usando força bruta, supondo que o atacante possa tentar milhões de combinações por segundo:</p>
+    
+        <p>Uma senha de 6 caracteres: Pode ser quebrada em segundos ou minutos.</p>
+        <p>Uma senha de 8 caracteres: Pode levar horas ou dias.</p>
+        <p>Uma senha de 12 caracteres: Pode levar meses ou anos.</p>
+        <p>Uma senha de 16 caracteres ou mais, com alta complexidade: Pode levar décadas ou mais, tornando-se extremamente difícil de quebrar.</p>
+        -->
+    </main>
+ 
+</body>
+</html>
